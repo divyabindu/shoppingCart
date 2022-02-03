@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+body,html{
+  font-family: 'Dosis', sans-serif;
+}
+.logo{
+  width:150px;
+  height:auto;
+}
+.navbar{
+  padding: 0px 10%;
+  box-shadow: 2px 2px 2px #cdcdcd;
+}
+.login-form{
+  margin:15px 0px;
+}
+.login-btn{
+  background-color: #d00054;
+  border-color:#d00054;
+}
+.login-btn:hover{
+  background-color: #d00054;
+}
+.inputField{
+  border:none;
+  border-bottom:1px solid #cdcdcd;
+}
+.form-group{
+position: relative;
+}
+.form-control::placeholder{
+  color:transparent;
+}
+.inputField:focus{
+  border-color: #50dae4;
+  box-shadow: none;
+}
+  label{
+    transition: all 0.3s ease-in;
+    transform: translateY(20px);
+    pointer-events: none;
+    padding-left: 5px;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label 
+{
+  transform: translateY(-2px);
+  color: #50dae4;
+  font-size: 12px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.emaillabel,.passwordlabel{
+  position: absolute;
+  top: -30%;
+  z-index: 1;
+}
+
+.footer{
+  /* position: fixed; */
+  left: 0;
+  bottom: 0;
+  background-color: #cdcdcd;
+}
+
+.nav-item a{
+  color:#000000;
+}
+
+svg {
+  fill: #d00054;
+}
+.times svg{
+  fill:#000000;
+}
+.cata{
+  box-shadow: 0px 10px 5px -5px #cdcdcd;
+    padding: 20px 0px;
+}
+
+.side-nav{
+  list-style-type: none;
+  background-color: #cdcdcd52;
+  height: 100vh;
+}
+
+.side-nav li{
+  border-bottom:1px solid #cdcdcd;
+}
+
+.items{
+  box-sizing: border-box;
+  padding: 10px;
+  border-bottom: 1px dashed;
+}
+
+.product-disc{
+  background-color: #cccccc;
+  padding: 0px 10px;
+  color: #000000;
+}
+
+#exampleFormControlSelect1{
+  background-color: #d10156 !important;
+  border:none;
+  color:#ffffff
+}
+
+.modal-header{
+  background-color: #000000 !important;
+  color:#ffffff;
+}
+.close{
+  color:#ffffff;
+}
+.modal-body{
+  background-color: #f3f3f38f;
+}
+
+.checkout-btn{
+  background-color: #d10156;
+  border:none;
+}
+.checkout-btn:hover{
+  background-color: #d10156;
+  border:none;
+}
+.modal-dialog{
+  float:right;
+}
+.cart-item-img{
+  background-color: #ffffff;
+}
+.header-cart{
+  cursor:pointer;
+}
+.product-name{
+  overflow:hidden; 
+        white-space:nowrap; 
+        text-overflow: ellipsis;
+}
+.product-desc{
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+.menu{
+  cursor:pointer;
+}
+
+.icons{
+  cursor:pointer;
+}
+
+.remove{
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+  z-index: 1;
+}
+.visiblePass{
+  position: absolute;
+    right: 0px;
+    bottom: 5px;
+    cursor:pointer;
+}
+
+.productName{
+  display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/*Media Queries*/
+
+@media(max-width:767px){
+  .navbar{
+    padding: .5rem 1rem !important;
+  }
+  .footer{
+    position: relative;
+
+  }
+  .modal-dialog{
+    clear:both;
+  }
+  .product-desc-btn,.btn-danger{
+    font-size:12px;
+  }
+}
+
+@media(min-width:768px){
+  .product-disc{
+    background-color: #ffffff;
+  }
+}
